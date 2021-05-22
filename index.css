@@ -49,6 +49,7 @@ a:hover{
     font-size: 50px;
     border-style: none;
     cursor: pointer;
+    outline: none;
 }
 #back{
     width: 100%;
@@ -57,6 +58,7 @@ a:hover{
     border-style: none;
     cursor: pointer;
     margin-top: 10%;
+    outline: none;
 }
 .button:hover{
     color: #4d4d4d;
