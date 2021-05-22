@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>GuYue</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body id="body">
+
+    <table id="table">
+        <tr>
+            <td><div class="divTitle1">欢迎来到GuYue</div><br><br><br><br>
+                <input class="button" type="button" value="↓" onclick="down()"></td>
+        </tr>
+
+        <tr>
+            <td><div class="divTitle2">个人信息</div><br><br>
+                <div class="divContent"><ul>
+                    <li>胡可津/男/2000</li>
+                    <li>本科/中北大学信息商务学院 计算机系 网络工程专业</li>
+                    <li>Github：<a href="https://github.com/gy1772007252">https://github.com/gy1772007252</a></li>
+                    <li>期望职位：Java高级程序员</li>
+                    <li>期望薪资：税前月薪5k+</li>
+                    <li>期望城市：北京、上海、苏州</li>
+                    </ul></div><br><br>
+                <input class="button" type="button" value="↑" onclick="up()">
+                <input class="button" type="button" value="↓" onclick="down()"></td>
+        </tr>
+
+        <tr>
+            <td><div class="divTitle2">联系方式</div><br><br>
+                <div class="divContent"><ul>
+                    <li>手机：19834270837</li>
+                    <li>Email：guyuehu1772007252@gmail.com</li>
+                    <li>QQ：1772007252</li>
+                    <li>微信号：19834270837</li>
+                </ul></div><br><br>
+                <input class="button" type="button" value="↑" onclick="up()">
+                <input class="button" type="button" value="↓" onclick="down()"></td>
+        </tr>
+
+        <tr>
+            <td><div class="divTitle2">技能清单</div><br><br>
+                <div class="divContent"><ul>
+                    <li>后端：Java</li>
+                    <li>数据库：Oracle</li>
+                    <li>框架：maven、servlet</li>
+                    <li>前端：xml、html、css、JavaScript</li>
+                </ul></div><br><br>
+                <input class="button" type="button" value="↑" onclick="up()">
+                <input class="button" type="button" value="↓" onclick="down()"></td>
+        </tr>
+
+        <tr>
+            <td><div class="divTitle1">感谢观看</div><br><br><br><br>
+                <input class="button" type="button" value="↑" onclick="up()">
+                <input id="back" type="button" value="回到初始" onclick="back()"></td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        var commonbody = document.getElementById('body');
+        commonbody.onselectstart=function () {
+            return false;
+        };
+        function down() {
+            window.scrollBy(0, 720);
+        }
+        function up() {
+            window.scrollBy(0, -720);
+        }
+        function back() {
+            window.scrollTo(0, 0);
+        }
+        window.onkeydown=key;
+        function key(key) {
+            if (key.keyCode == 38) {
+                up();
+            } else if (key.keyCode == 40) {
+                down();
+            }
+        }
+    </script>
+
+    </body>
+</html>
