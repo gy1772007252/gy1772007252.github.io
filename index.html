@@ -73,14 +73,16 @@
         function back() {
             window.scrollTo(0, 0);
         }
-        window.onkeydown=key;
-        function key(key) {
-            if (key.keyCode == 38) {
+        window.onkeydown=function (ev) {
+            if (ev.keyCode == 38) {
                 up();
-            } else if (key.keyCode == 40) {
+            } else if (ev.keyCode == 40) {
                 down();
             }
-        }
+        };
+        window.onfocus=function (ev) {
+           ononline='none';
+        };
     </script>
 
     </body>
